@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- FontAwesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <!-- My CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <title>Potoba - When hunger strikes..</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+
+<body>
+  <!-- header design -->
+  <header>
+    <nav id="nav" class="navbar navbar-expand-lg navigation-wrap">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/logo.png" height="60" alt=""> पोटोबा</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-stream navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <!-- added additional attributes to links data-bs-toggle="collapse" data-bs-target=".navbar-collapse"  -->
+              <!-- this makes menubar hide when clicked on menu in mobile mode -->
+              <!-- https://stackoverflow.com/questions/14203279/bootstrap-close-responsive-menu-on-click/21744007#21744007 -->
+              <!-- https://getbootstrap.com/docs/5.0/utilities/display/ -->
+              <!-- but this have flickering issue on xs or non responsive screen so just add .in in target if you not using other plugins like scrollspy or add .show experimental.  -->
+
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#explore-food">Explore Food</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#testimonial">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#faq">FAQ</a>
+            </li>
+            <li><button class="main-btn">1700 345 123</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- section-1 top banner  -->
+
+  <section id="home">
+    <div class="container-fluid px-0 top-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5 col-md-6">
+            <h1>Good food choices are good investments.</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel facere neque eius nihil quibusdam unde!</p>
+            <div class="mt-4">
+              <button class="main-btn">Order now <i class="fas fa-shopping-basket ps-3"></i></button>
+              <button class="white-btn ms-lg-4 mt-lg-0 mt-4"> now <i class="fas fa-angle-right ps-3"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section-2 counter -->
+  <section>
+    <section class="counter-section">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count1"></span>+
+            </h2>
+            <p>savings</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count2"></span>+
+            </h2>
+            <p>photos</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count3"></span>+
+            </h2>
+            <p>rockets</p>
+          </div>
+          <div class="col-md-3 mb-lg-0 mb-md-0 mb-5">
+            <h2>
+              <span id="count4"></span>+
+            </h2>
+            <p>globes</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+  <!-- section-3 about -->
+  <section id="about">
+    <div class="about-section wrapper">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7 col-md-12 mb-lg-0 mb-5">
+            <div class="card border-0">
+              <img src="img/food-img/img-1.png" alt="Gourmet Food Image" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12 text-secondary">
+            <h2>We pride ourselves on making real food from the best ingredients.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi molestiae mollitia voluptate quas alias
+              temporibus sed eius explicabo nisi facilis dolore necessitatibus fuga, earum modi.</p>
+            <button class="main-btn mt-4">Learn More</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container food-type">
+        <div class="row align-items-center">
+          <div class="col-lg-5 col-md-12 text-secondary mb-lg-0 mb-5">
+            <h2>We make everything by hand with the best possible ingredients.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta mollitia recusandae quaerat esse
+              praesentium doloremque unde nemo nostrum. Vero esse, natus hic minima recusandae velit nobis fugiat
+              officia numquam dignissimos!</p>
+            <ul class="list-unstyled py-3">
+              <!-- y= top and bottom -->
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+            <button class="main-btn mt-4">Learn More</button>
+          </div>
+
+          <div class="col-lg-7 col-md-12">
+            <div class="card border-0">
+              <img src="img/food-img/img-2.png" alt="" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section-4 story -->
+  <section id="story">
+    <div class="story-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="text-content">
+              <h2>When a man's stomach is full it makes no difference whether he is rich or poor.</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla nostrum saepe quia, magnam eius facere
+                alias voluptatibus suscipit id non, molestias illum quibusdam, ea consequatur cumque quo numquam nihil.
+                Perspiciatis.</p>
+              <button class="main-btn mt-3">Read More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section-5 explore food -->
+  <section id="explore-food">
+    <div class="explore-food wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="text-content text-center">
+              <h2>Explore Our Foods</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse molestiae impedit blanditiis, doloremque
+                voluptates eveniet non tempora voluptate magnam dolores aliquid repudiandae provident illo architecto
+                necessitatibus cumque omnis nemo earum a qui, enim quibusdam! Magnam officiis ad harum accusamus cumque.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pt-5">
+          <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+            <div class="card">
+              <img src="img/food-img/img-3.jpg" alt="" class="img-fluid">
+              <div class="pt-3">
+                <h4>Rainbow Vegetable Sandwich</h4>
+                <p>Time: 15 - 20 Minutes | Serves: 1</p>
+                <span>$10.50 <del>$11.70</del></span>
+                <button class="mt-4 main-btn">Get It Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+            <div class="card">
+              <img src="img/food-img/img-4.jpg" alt="" class="img-fluid">
+              <div class="pt-3">
+                <h4>Vegetarian Burger</h4>
+                <p>Time: 30 - 45 Minutes | Serves: 1</p>
+                <span>$9.20 <del>$10.50</del></span>
+                <button class="mt-4 main-btn">Get It Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+            <div class="card">
+              <img src="img/food-img/img-5.jpg" alt="" class="img-fluid">
+              <div class="pt-3">
+                <h4>Raspberry Stuffed French Toast</h4>
+                <p>Time: 9 - 13 Minutes | Serves: 1</p>
+                <span>$12.50 <del>$13.20</del></span>
+                <button class="mt-4 main-btn">Get It Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section-6 testimonial -->
+  <section id="testimonial">
+    <div class="testimonial-section wrapper">
+      <div class="container text-center">
+        <div class="text-center pb-4">
+          <h2>Testimonial</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12 col-lg-10 offset-lg-1">
+            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="carousel-caption">
+                    <img src="img/review/review-1.jpg" alt="Reviewer Image">
+                    <p>"Far far away, behind the word mountains, far from the countires Vokalia and Consonantia, there
+                      live the blind texts."</p>
+                    <h5>Johnathan Doe - UX Designer</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-caption">
+                    <img src="img/review/review-2.jpg" alt="Reviewer Image">
+                    <p>"Far far away, behind the word mountains, far from the countires Vokalia and Consonantia, there
+                      live the blind texts."</p>
+                    <h5>Isabella Ray - Fashion Expert</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="carousel-caption">
+                    <img src="img/review/review-1.jpg" alt="Reviewer Image">
+                    <p>"Far far away, behind the word mountains, far from the countires Vokalia and Consonantia, there
+                      live the blind texts."</p>
+                    <h5>Johnathan Doe - UX Designer</h5>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- section-7 faq -->
+  <section id="faq">
+    <div class="faq wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="text-center pb-4">
+              <h2>Frequently Asked Questions</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-5">
+          <div class="col-sm-6 mb-4">
+            <h4><span>~</span>Does bread really baked fresh each day?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus nulla impedit odit animi enim ullam, hic numquam nihil a suscipit cumque deserunt velit, neque doloremque reiciendis obcaecati placeat vitae cum harum ab nam sunt itaque ex? Dignissimos quod eum voluptatem quos laboriosam vel rerum quia.</p>
+          </div>
+          <div class="col-sm-6 mb-4">
+            <h4><span>~</span>Do you bake bead containing animal fats or products?</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime repellat, perferendis temporibus harum
+              cumque labore consequuntur, quibusdam ab eos ex ipsam soluta sapiente nemo reprehenderit corporis,
+              necessitatibus aperiam molestias similique! Aperiam vel odio beatae assumenda placeat ex quibusdam,
+              tenetur pariatur!</p>
+          </div>
+
+
+          <div class="col-sm-6 mb-4">
+            <h4><span>~</span>Can I order your products online?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita dolores laudantium, quo ullam maiores distinctio itaque laborum, quos repellendus inventore sed illo, possimus fugit nisi.</p>
+          </div>
+          <div class="col-sm-6 mb-4">
+            <h4><span>~</span>When are you opening a shop near me?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur excepturi aliquid ullam quo mollitia eos aperiam in! Blanditiis laborum sapiente cum quam laboriosam, nostrum qui atque tempora, dolore id repellat?</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- section-8 book-food -->
+  <section id="bood-food">
+    <div class="book-food">
+      <div class="container book-food-text">
+        <div class="row text-center">
+          <div class="col-lg-9 col-md-12">
+            <h2>Baked and Cooked fresh daily by our Chefs with passion.</h2>
+          </div>
+          <div class="col-lg-3 col-md-12 mt-lg-0 mt-4">
+            <button class="main-btn">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- section-9 newsletter -->
+  <section id="newsletter">
+    <div class="newsletter wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="text-content text-center pb-4">
+                <h2>Hurry up! Subscribe our newsletter and get 25% Off</h2>
+                <p>Limited time offer for this month. No credit card required.</p>
+              </div>
+              <form action="#" class="newsletter">
+                <div class="row">
+                  <div class="col-md-8 col-12">
+                    <input class="form-control" placeholder="Email Address here" name="email" type="email">
+                  </div>
+                  <div class="col-md-4 col-12">
+                    <button class="main-btn" type="submit">Subscribe</button>
+                  </div>
+
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- section-10 footer -->
+  <footer id="footer">
+    <div class="footer py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <a href="#" class="footer-link">Register</a>
+            <a href="#" class="footer-link">Forum</a>
+            <a href="#" class="footer-link">Affiliate</a>
+            <a href="#" class="footer-link">FAQ</a>
+            <div class="footer-social pt-4 text-center">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+              <a href="#"><i class="fab fa-dribbble"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-discord"></i></a>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="footer-copy">
+              <div class="copyright text-center pt-5">
+                <p class="text-light">© 2021. Potoba Foods and Restraunts. All rights reserved.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="js/main.js"></script>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
